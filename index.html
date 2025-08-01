@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV RA Seguridad - CCTV, Puntos de Venta y Cableado Estructurado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .metallic-gradient {
+            background: linear-gradient(135deg, #71717a 0%, #a1a1aa 50%, #d4d4d8 100%);
+        }
+        .dark-metallic {
+            background: linear-gradient(135deg, #3f3f46 0%, #52525b 50%, #71717a 100%);
+        }
+        .silver-gradient {
+            background: linear-gradient(135deg, #e4e4e7 0%, #f4f4f5 50%, #ffffff 100%);
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .metallic-text {
+            background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .metallic-border {
+            border: 2px solid;
+            border-image: linear-gradient(135deg, #71717a, #a1a1aa, #d4d4d8) 1;
+        }
+        .chrome-effect {
+            background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 25%, #ffffff 50%, #f3f4f6 75%, #e5e7eb 100%);
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1), inset 0 -1px 3px rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="dark-metallic text-white shadow-2xl">
+        <div class="container mx-auto px-4 py-5">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="chrome-effect p-3 rounded-xl">
+                        <i class="fas fa-shield-alt text-gray-700 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold text-white">AV RA Seguridad</h1>
+                        <p class="text-gray-300 text-sm font-medium">Soluciones Tecnológicas Integrales</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-200 hover:text-white transition-colors font-medium">Inicio</a>
+                    <a href="#servicios" class="text-gray-200 hover:text-white transition-colors font-medium">Servicios</a>
+                    <a href="#contacto" class="text-gray-200 hover:text-white transition-colors font-medium">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="metallic-gradient hero-pattern text-white py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-6xl font-bold mb-8 text-gray-800">Protege tu Negocio con Tecnología Avanzada</h2>
+            <p class="text-xl mb-10 max-w-4xl mx-auto text-gray-700 font-medium">Especialistas en sistemas de videovigilancia CCTV, puntos de venta, redes y cableado estructurado. Más de 10 años brindando seguridad y conectividad a empresas en México.</p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#contacto" class="chrome-effect text-gray-800 px-10 py-4 rounded-xl font-bold text-lg hover:shadow-lg transition-all duration-300">
+                    Contáctanos Ahora
+                </a>
+                <a href="#servicios" class="bg-gray-800 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-gray-700 transition-colors border-2 border-gray-600">
+                    Explorar Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-gray-800 mb-6">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto font-medium">Ofrecemos soluciones completas en seguridad y tecnología para tu empresa</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- CCTV Service -->
+                <div class="service-card p-8 rounded-2xl shadow-xl metallic-border">
+                    <div class="chrome-effect w-20 h-20 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-video text-gray-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Sistemas CCTV</h3>
+                    <p class="text-gray-600 mb-8 font-medium">Instalación y mantenimiento de cámaras de seguridad HD, IP y análogas. Monitoreo 24/7 y acceso remoto.</p>
+                    <ul class="text-gray-700 space-y-3 font-medium">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Cámaras HD y 4K</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Grabación en la nube</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Acceso móvil</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Visión nocturna</li>
+                    </ul>
+                </div>
+
+                <!-- POS Service -->
+                <div class="service-card p-8 rounded-2xl shadow-xl metallic-border">
+                    <div class="chrome-effect w-20 h-20 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-cash-register text-gray-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Puntos de Venta</h3>
+                    <p class="text-gray-600 mb-8 font-medium">Sistemas POS modernos y eficientes para optimizar las ventas y el control de inventario de tu negocio.</p>
+                    <ul class="text-gray-700 space-y-3 font-medium">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Terminales táctiles</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Control de inventario</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Reportes en tiempo real</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Múltiples formas de pago</li>
+                    </ul>
+                </div>
+
+                <!-- Networks Service -->
+                <div class="service-card p-8 rounded-2xl shadow-xl metallic-border">
+                    <div class="chrome-effect w-20 h-20 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-network-wired text-gray-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Redes</h3>
+                    <p class="text-gray-600 mb-8 font-medium">Diseño e implementación de redes empresariales seguras y de alto rendimiento para tu organización.</p>
+                    <ul class="text-gray-700 space-y-3 font-medium">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Redes WiFi empresariales</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Configuración de routers</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Seguridad de red</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Monitoreo de tráfico</li>
+                    </ul>
+                </div>
+
+                <!-- Structured Cabling Service -->
+                <div class="service-card p-8 rounded-2xl shadow-xl metallic-border">
+                    <div class="chrome-effect w-20 h-20 rounded-2xl flex items-center justify-center mb-8">
+                        <i class="fas fa-plug text-gray-700 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Cableado Estructurado</h3>
+                    <p class="text-gray-600 mb-8 font-medium">Instalación profesional de cableado estructurado Cat6 y fibra óptica para máximo rendimiento.</p>
+                    <ul class="text-gray-700 space-y-3 font-medium">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Cable Cat6/Cat6A</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Fibra óptica</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Racks y gabinetes</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-gray-600 mr-3"></i>Certificación de enlaces</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-24 silver-gradient">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-gray-800 mb-6">¿Por Qué Elegirnos?</h2>
+                <p class="text-xl text-gray-600 font-medium">Experiencia y calidad que respaldan cada proyecto</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="dark-metallic w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+                        <i class="fas fa-award text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Experiencia Comprobada</h3>
+                    <p class="text-gray-600 font-medium text-lg">Más de 10 años instalando sistemas de seguridad y tecnología en empresas de todos los tamaños.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="dark-metallic w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+                        <i class="fas fa-tools text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Soporte Técnico 24/7</h3>
+                    <p class="text-gray-600 font-medium text-lg">Mantenimiento preventivo y correctivo. Respuesta rápida ante cualquier eventualidad.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="dark-metallic w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl">
+                        <i class="fas fa-certificate text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Garantía Total</h3>
+                    <p class="text-gray-600 font-medium text-lg">Todos nuestros trabajos incluyen garantía completa en equipos e instalación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-gray-800 mb-6">Información de Contacto</h2>
+                <p class="text-xl text-gray-600 font-medium">Estamos aquí para ayudarte con tus proyectos</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                <!-- Phone -->
+                <div class="chrome-effect p-10 rounded-2xl shadow-2xl text-center metallic-border">
+                    <div class="dark-metallic w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-phone text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Teléfono</h3>
+                    <p class="text-3xl font-bold text-gray-700 mb-4">55 8344 9694</p>
+                    <p class="text-gray-600 font-medium">Lunes a Viernes</p>
+                    <p class="text-gray-600 font-medium">8:00 AM - 6:00 PM</p>
+                </div>
+                
+                <!-- Email -->
+                <div class="chrome-effect p-10 rounded-2xl shadow-2xl text-center metallic-border">
+                    <div class="dark-metallic w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-envelope text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Email</h3>
+                    <p class="text-xl font-bold text-gray-700 mb-4">av-ra@outlook.com</p>
+                    <p class="text-gray-600 font-medium">Respuesta garantizada</p>
+                    <p class="text-gray-600 font-medium">en menos de 24 horas</p>
+                </div>
+                
+                <!-- Address -->
+                <div class="chrome-effect p-10 rounded-2xl shadow-2xl text-center metallic-border">
+                    <div class="dark-metallic w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-map-marker-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Dirección</h3>
+                    <p class="text-gray-700 font-bold mb-2">Mamey 4 Mza 34</p>
+                    <p class="text-gray-700 font-bold mb-2">Las Huertas 3ra Sección</p>
+                    <p class="text-gray-600 font-medium">Naucalpan de Juárez</p>
+                    <p class="text-gray-600 font-medium">Estado de México</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Summary -->
+    <section class="py-20 dark-metallic text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-white">Soluciones Tecnológicas Completas</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="chrome-effect w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-5xl text-gray-700"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-200">CCTV</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="chrome-effect w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cash-register text-5xl text-gray-700"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-200">Puntos de Venta</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="chrome-effect w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-5xl text-gray-700"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-200">Redes</h3>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="chrome-effect w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-plug text-5xl text-gray-700"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-200">Cableado</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="chrome-effect p-3 rounded-xl">
+                            <i class="fas fa-shield-alt text-gray-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">AV RA Seguridad</h3>
+                    </div>
+                    <p class="text-gray-300 mb-6 font-medium">Tu socio confiable en soluciones de seguridad y tecnología empresarial.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Servicios</h4>
+                    <ul class="space-y-3 text-gray-300 font-medium">
+                        <li><a href="#servicios" class="hover:text-white transition-colors">Sistemas CCTV</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition-colors">Puntos de Venta</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition-colors">Redes</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition-colors">Cableado Estructurado</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Contacto</h4>
+                    <div class="space-y-3 text-gray-300 font-medium">
+                        <p><i class="fas fa-phone mr-3"></i> 55 8344 9694</p>
+                        <p><i class="fas fa-envelope mr-3"></i> av-ra@outlook.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-3"></i> Naucalpan de Juárez, Edo. Méx.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AV RA Seguridad. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(card);
+        });
+
+        // Add metallic shine effect on hover
+        document.querySelectorAll('.chrome-effect').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9683903fb7da5cc2',t:'MTc1NDAzMjcyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
